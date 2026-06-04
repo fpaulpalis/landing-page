@@ -37,6 +37,28 @@ header nav a {
   gap: 3rem;
 }
 
+/* HERO SECTION */
+.hero {
+  background-color: #1f2937;
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  color: #f9faf8;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
 /* FOOTER */
 footer {
   background-color: #1f2937;
