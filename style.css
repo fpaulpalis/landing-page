@@ -69,6 +69,25 @@ header nav a {
   color: var(--hero-secondary-text);
 }
 
+.hero-figure {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.hero-figure img {
+  width: 380px;
+  height: 220px;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--hero-secondary-text);
+}
+
 /* FOOTER */
 footer {
   background-color: var(--dark-bg);
