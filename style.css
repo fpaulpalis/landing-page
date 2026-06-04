@@ -67,6 +67,9 @@ header nav a {
 
 .hero-text p {
   color: var(--hero-secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
 .hero-figure {
