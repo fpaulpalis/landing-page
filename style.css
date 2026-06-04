@@ -6,13 +6,17 @@
   padding: 0;
 }
 
+:root {
+  --dark-bg: #1f2937;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 /* HEADING */
 header {
-  background-color: #1f2937;
+  background-color: var(--dark-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,9 +63,13 @@ header nav a {
   margin-bottom: 1rem;
 }
 
+.hero-text p {
+  color: #e5e7eb;
+}
+
 /* FOOTER */
 footer {
-  background-color: #1f2937;
+  background-color: var(--dark-bg);
   color: #e5e7eb;
   text-align: center;
   padding: 1.5rem;
