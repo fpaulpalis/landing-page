@@ -9,6 +9,7 @@
 :root {
   --dark-bg: #1f2937;
   --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
 }
 
 body {
@@ -36,7 +37,7 @@ header nav {
 }
 
 header nav a {
-  color: #e5e7eb;
+  color: var(--hero-secondary-text);
   text-decoration: none;
   font-size: 18px;
   gap: 3rem;
@@ -65,7 +66,7 @@ header nav a {
 }
 
 .hero-text p {
-  color: #e5e7eb;
+  color: var(--hero-secondary-text);
 }
 
 /* FOOTER */
