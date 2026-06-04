@@ -36,3 +36,12 @@ header nav a {
   font-size: 18px;
   gap: 3rem;
 }
+
+/* FOOTER */
+footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 18px;
+}
