@@ -18,9 +18,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 /* HEADING */
 header {
   background-color: var(--dark-bg);
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +57,8 @@ header nav a {
 /* HERO SECTION */
 .hero {
   background-color: var(--dark-bg);
+}
+.hero .container {
   padding: 5rem 3rem;
   display: flex;
   align-items: center;
