@@ -16,10 +16,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling to target section IDs */
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px; /* Widened slightly to let 5 cards fit beautifully across the screen */
   margin: 0 auto;
   width: 100%;
 }
@@ -33,7 +34,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
 }
 
 header .logo {
@@ -51,7 +52,6 @@ header nav a {
   color: var(--hero-secondary-text);
   text-decoration: none;
   font-size: 18px;
-  gap: 3rem;
 }
 
 /* HERO SECTION */
@@ -62,27 +62,27 @@ header nav a {
   padding: 5rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8rem;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 .hero-text {
-  max-width: 380px;
+  max-width: 420px;
 }
 
 .hero-text h1 {
   color: var(--hero-main-text);
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.15;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-text p {
   color: var(--hero-secondary-text);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-figure {
@@ -91,36 +91,38 @@ header nav a {
 }
 
 .hero-figure img {
-  width: 380px;
-  height: 220px;
-  border-radius: 4px;
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
   object-fit: cover;
   display: block;
 }
 
-.hero-figure figcaption {
+.hero-figure figcaption,
+a {
   margin-top: 0.5rem;
   font-size: 0.8rem;
   color: var(--hero-secondary-text);
+  font-style: italic;
 }
 
 /* INFO SECTION */
 .info {
   color: #111827;
   text-align: center;
-  padding: 4rem 3rem;
+  padding: 5rem 2rem;
 }
 
 .info h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 900;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .info-cards {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
@@ -129,7 +131,18 @@ header nav a {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  width: 150px;
+  width: 160px;
+}
+
+/* Clickable card zoom effect */
+.card-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-link:hover {
+  transform: scale(1.08);
 }
 
 .card-image {
@@ -137,6 +150,30 @@ header nav a {
   height: 150px;
   border: 5px solid var(--button-color);
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: transparent;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-bg);
+  margin-top: 0.25rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #4b5563;
 }
 
 /* QUOTE SECTION */
@@ -152,51 +189,51 @@ header nav a {
 
 .quote blockquote {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #374151;
-  max-width: 600px;
+  max-width: 700px;
+  text-align: center;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .quote cite {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #111827;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   text-align: right;
 }
 
 /* ── CALL-TO-ACTION SECTION ── */
 .cta {
-  padding: 4rem 3rem;
+  padding: 5rem 3rem;
   display: flex;
   justify-content: center;
 }
 
 .cta-box {
   background-color: var(--button-color);
-  border-radius: 8px;
-  padding: 2rem 3rem;
+  border-radius: 12px;
+  padding: 3rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
-  max-width: 680px;
 }
 
 .cta-text h3 {
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
   color: var(--hero-main-text);
 }
 
 .cta-text p {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* FOOTER */
@@ -204,26 +241,38 @@ footer {
   background-color: var(--dark-bg);
   color: #e5e7eb;
   text-align: center;
-  padding: 1.5rem;
-  font-size: 18px;
+  padding: 2rem;
+  font-size: 16px;
 }
 
 /* BUTTON */
 .btn {
   background-color: var(--button-color);
-  color: var(--hero-secondary-text);
+  color: var(--hero-main-text);
   border: none;
   border-radius: 6px;
-  padding: 0.6rem 1.4rem;
+  padding: 0.75rem 1.75rem;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 .btn-outline {
   background-color: transparent;
   border: 2px solid var(--white);
   color: var(--white);
+}
+
+.btn-outline:hover {
+  background-color: var(--white);
+  color: var(--button-color);
+  opacity: 1;
 }

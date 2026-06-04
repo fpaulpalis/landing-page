@@ -7,18 +7,18 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landing Page</title>
+    <title>Explore Linux Distros</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--  HEADER  -->
     <header>
       <div class="container">
-        <div class="logo">Header Logo</div>
+        <div class="logo">Linux</div>
         <nav>
-          <a href="#">header link one</a>
-          <a href="#">header link two</a>
-          <a href="#">header link three</a>
+          <a href="#">Distros</a>
+          <a href="#">Guide</a>
+          <a href="#">Community</a>
         </nav>
       </div>
     </header>
@@ -27,43 +27,110 @@
     <section class="hero">
       <div class="container">
         <div class="hero-text">
-          <h1>This website is awesome</h1>
+          <h1>Embrace Freedom.</h1>
           <p>
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
+            Discover some of the best Linux distributions designed to make your
+            transition smooth, stable, and completely open-source.
           </p>
-          <a href="#" class="btn">Sign up</a>
+          <a href="#distros" class="btn">Explore Distros</a>
         </div>
         <figure class="hero-figure">
           <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=760"
-            alt="Person coding on a laptop"
+            src="/images/hero-image.webp"
+            alt="Tux peek-a-boo behind a frosted window panel"
           />
-          <figcaption>Building the web, one line at a time.</figcaption>
+          <figcaption>
+            "Tux behind the window" by
+            <a
+              href="https://www.reddit.com/r/linux/comments/kc6atn/tux_behind_the_window_wallpaper/"
+              target="_blank"
+              class="caption-link"
+              >kc6atn</a
+            >
+          </figcaption>
         </figure>
       </div>
     </section>
 
     <!-- INFO SECTION -->
-    <section class="info">
+    <section id="distros" class="info">
       <div class="container">
-        <h2>Some random information</h2>
+        <h2>Recommended Distros for Beginners</h2>
         <div class="info-cards">
+          <!-- Fedora -->
           <div class="card">
-            <div class="card-image"></div>
-            <p>this is some subtext under an illustration or image</p>
+            <a
+              href="https://fedoraproject.org/"
+              target="_blank"
+              class="card-link"
+              title="Visit Fedora Website"
+            >
+              <div class="card-image">
+                <img src="images/fedora.svg" alt="Fedora logo" />
+              </div>
+            </a>
+            <h3>Fedora</h3>
+            <p>
+              Sleek, modern, and upstream-focused. Great for learning standard
+              Linux paradigms.
+            </p>
           </div>
+
+          <!-- Zorin OS -->
           <div class="card">
-            <div class="card-image"></div>
-            <p>this is some subtext under an illustration or image</p>
+            <a
+              href="https://zorin.com/os/"
+              target="_blank"
+              class="card-link"
+              title="Visit Zorin OS Website"
+            >
+              <div class="card-image">
+                <img src="images/zorin.svg" alt="Zorin OS logo" />
+              </div>
+            </a>
+            <h3>Zorin OS</h3>
+            <p>
+              Designed specifically for Windows/macOS switchers with a familiar
+              interface.
+            </p>
           </div>
+
+          <!-- Linux Mint -->
           <div class="card">
-            <div class="card-image"></div>
-            <p>this is some subtext under an illustration or image</p>
+            <a
+              href="https://linuxmint.com/"
+              target="_blank"
+              class="card-link"
+              title="Visit Linux Mint Website"
+            >
+              <div class="card-image">
+                <img src="images/linuxmint.svg" alt="Linux Mint logo" />
+              </div>
+            </a>
+            <h3>Linux Mint</h3>
+            <p>
+              The gold standard for beginners. Rock-solid, familiar layout,
+              works out of the box.
+            </p>
           </div>
+
+          <!-- Debian -->
           <div class="card">
-            <div class="card-image"></div>
-            <p>this is some subtext under an illustration or image</p>
+            <a
+              href="https://www.debian.org/"
+              target="_blank"
+              class="card-link"
+              title="Visit Debian Website"
+            >
+              <div class="card-image">
+                <img src="images/debian.svg" alt="Debian logo" />
+              </div>
+            </a>
+            <h3>Debian</h3>
+            <p>
+              Unmatched stability. The foundational project that powers many
+              other distributions.
+            </p>
           </div>
         </div>
       </div>
@@ -72,12 +139,8 @@
     <!-- QUOTE SECTION -->
     <section class="quote">
       <div class="container">
-        <blockquote>
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-        </blockquote>
-        <cite>-Thor, God of Thunder</cite>
+        <blockquote>"Talk is cheap. Show me the code."</blockquote>
+        <cite>- Linus Torvalds, Creator of Linux</cite>
       </div>
     </section>
 
@@ -86,19 +149,20 @@
       <section class="cta">
         <div class="cta-box">
           <div class="cta-text">
-            <h3>Call to action! It's time!</h3>
+            <h3>Ready to make the switch?</h3>
             <p>
-              Sign up for our product by clicking that button right over there!
+              Grab a USB drive, pick your favorite distribution, and start your
+              open-source journey today!
             </p>
           </div>
-          <a href="#" class="btn btn-outline">Sign up</a>
+          <a href="#distros" class="btn btn-outline">Get Started</a>
         </div>
       </section>
     </div>
 
     <!-- FOOTER -->
     <footer>
-      <p>Copyright &copy; Francis Paul Palis 2026</p>
+      <p>Copyright &copy; The Odin Project 2026</p>
     </footer>
   </body>
 </html>
