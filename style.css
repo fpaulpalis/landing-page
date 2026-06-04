@@ -63,17 +63,17 @@ header nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 8rem;
 }
 
 .hero-text {
-  max-width: 500px;
+  max-width: 380px;
 }
 
 .hero-text h1 {
   color: var(--hero-main-text);
   font-weight: 900;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: 1.15;
   margin-bottom: 1rem;
 }
