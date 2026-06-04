@@ -11,6 +11,7 @@
   --hero-main-text: #f9faf8;
   --hero-secondary-text: #e5e7eb;
   --button-color: #3882f6;
+  --white: white;
 }
 
 body {
@@ -154,6 +155,37 @@ header nav a {
   max-width: 600px;
   width: 100%;
   text-align: right;
+}
+
+/* ── CALL-TO-ACTION SECTION ── */
+.cta {
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {
+  background-color: var(--button-color);
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  max-width: 680px;
+}
+
+.cta-text h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--hero-main-text);
+}
+
+.cta-text p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* FOOTER */
